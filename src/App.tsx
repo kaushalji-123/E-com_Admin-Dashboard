@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "./Components/Loader.tsx"
 
-const Dashboard = lazy(() => import ("./Pages/dashboard.tsx"));
-const Product = lazy(() => import   ("./Pages/product.tsx"));
-const Transaction = lazy(() => import ("./Pages/transaction.tsx"));
-const Customers = lazy(() => import ("./Pages/customers.tsx"));
+const Dashboard = lazy(() => import ("./Pages/Dashboard.tsx"));
+const Product = lazy(() => import   ("./Pages/Product.tsx"));
+const Transaction = lazy(() => import ("./Pages/Transaction.tsx"));
+const Customers = lazy(() => import ("./Pages/Customers.tsx"));
 
 const App = () => {
   return (

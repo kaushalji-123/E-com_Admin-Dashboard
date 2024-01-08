@@ -1,24 +1,43 @@
+@import "mixin";
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
   }
-  *{
-    box-sizing: border-box;
+  
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-  a{
+  
+  a {
     text-decoration: none;
     color: black;
   }
-  .red{
+  
+  .red {
     color: red;
   }
-  .purple{
-    color: rgb(47,0,255);
+  .purple {
+    color: rgb(47, 0, 255);
   }
-  .green{
+  .green {
     color: rgb(0, 195, 0);
   }
   
+  .admin-container {
+    @include grid(1fr 4fr, 2rem);
+    height: 100vh;
+    background-color: rgb(233, 183, 183);
+    > aside {
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
+      z-index: 10;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+}

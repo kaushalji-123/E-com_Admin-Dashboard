@@ -1,6 +1,0 @@
-
-@mixin heading($spacing:30px, $weight:300, $case:uppercase){
-    letter-spacing: $spacing;
-    font-weight: $weight;
-    text-transform: $case;
-}
