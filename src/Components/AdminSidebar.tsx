@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-// import {RiDashboardFill, RiShoppingBag3Fill,} from 'react-icon/ri';
+import { RiDashboardFill, RiShoppingBag3Fill } from 'react-icons/ri';
 const AdminSidebar = () => {
   const  location = useLocation()
   return(
@@ -12,13 +12,13 @@ const AdminSidebar = () => {
       <ul>
     <li>
         <Link to={"/admin/dashboard"}>
-          {/* <RiDashboardFill/> */}
+          <RiDashboardFill/>
           Dashboard
         </Link>   
     </li> 
     <li>
         <Link to={"/admin/product"}>
-          {/* <RiShoppingBag3Fill/> */}
+          <RiShoppingBag3Fill/>
           Product
         </Link>   
     </li>
