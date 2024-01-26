@@ -16,6 +16,12 @@ const App = () => {
         <Route path="/admin/product" element={<Product />} />
         <Route path="/admin/transaction" element={<Transaction />} />
         <Route path="/admin/customers" element={<Customers />} />
+
+        {/*   Charts  */}
+
+
+        {/*  Apps */}
+        
       </Routes>
     </Router>
     </Suspense>
