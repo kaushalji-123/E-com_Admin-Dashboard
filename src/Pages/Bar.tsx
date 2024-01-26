@@ -1,16 +1,15 @@
 import AdminSidebar from "../Components/AdminSidebar"
- 
-const Dashboard = () => {
+
+const Bar = () => {
   return (
     <div className="admin-container">
     <AdminSidebar/>
-      <main className="dashhboard">
+      <main className="Bar">
         <div className="bar">
-          bar
         </div>
       </main>
     </div>
-    )
+  )
 }
 
-export default Dashboard 
+export default Bar

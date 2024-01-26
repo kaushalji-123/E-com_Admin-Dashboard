@@ -1,16 +1,15 @@
 import AdminSidebar from "../Components/AdminSidebar"
- 
-const Dashboard = () => {
+
+const Stopwatch = () => {
   return (
     <div className="admin-container">
     <AdminSidebar/>
-      <main className="dashhboard">
+      <main className="Stopwatch">
         <div className="bar">
-          bar
         </div>
       </main>
     </div>
-    )
+  )
 }
 
-export default Dashboard 
+export default Stopwatch
