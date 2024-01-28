@@ -6,15 +6,18 @@
         @include flex(row,unset);
         padding: 0 1rem;
         border-bottom: 1px solid rgba(0,0,0,0.38);
-        .input{
-            width: 3rem;
-            margin-right: 2rem;
-            height: 100px;
-            background-color: red;
+        >input{
+            margin-right: auto;
+            @include inputStyle(100%, 1rem 0);
         }
-        .img{
-            height: 20px;
-            width: 20px;
+        >svg{
+            font-size:1.2rem;
+            opacity: 0.8;
+        }
+        >img{
+           @include square(2rem);
+           border-radius: 50%;
+            
         }
     }
 }
