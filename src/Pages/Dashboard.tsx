@@ -15,9 +15,25 @@ const Dashboard = () => {
           <FaRegBell/>
           <img src={user} alt="User" />
         </div>
+
+        <section className="widgetcontainer">
+
+        </section>
       </main>
     </div>
-    )
+  )
+};
+
+interface WidgetItemProps{
+  heading:string;
+  value:number;
+  percent: number;
+  color:string;
+  amount?:boolean;
 }
+const WidgetItem =({heading,value,percent,color,amount}: WidgetItemProps) => (
+  <article className="widget"> </article>
+);
+
 
 export default Dashboard 
