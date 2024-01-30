@@ -24,22 +24,22 @@ const Dashboard = () => {
           <WidgetItem 
           percent={40}
           amount={true}
-          value={40}
-          heading="340000"
+          value={4000}
+          heading="Revenue"
           color="rgb(0,115,255)"
           />
           <WidgetItem 
           percent={-40}
           amount={true}
-          value={90}
-          heading="340000"
+          value={9990}
+          heading="User"
           color="rgb(0,115,255)"
           />
           <WidgetItem 
           percent={40}
           amount={true}
-          value={40}
-          heading="340000"
+          value={65240}
+          heading="Transaction"
           color="rgb(0,115,255)"
           />
         </section>
@@ -49,7 +49,7 @@ const Dashboard = () => {
 };
 
 interface WidgetItemProps{
-  heading:string;
+  heading:string ;
   value:number;
   percent: number;
   color:string;
@@ -65,7 +65,7 @@ const WidgetItem =  ({
   <article className="widget">
     <div className="widgetInfo">
       <p>{heading}</p>
-      <h4>Revenue {amount ? `$${value}` : value}</h4> 
+      <h4>{amount ? `$${value}` : value}</h4> 
       {
       percent > 0 ? (
         <span className="green">
@@ -78,8 +78,11 @@ const WidgetItem =  ({
       )
     }
     </div>
+    <div className="widgetCircle">
+        <span color={color}>{percent}%</span>
+    </div>
   </article>
 );
-
+// function to calculate days between two days
 
 export default Dashboard 
